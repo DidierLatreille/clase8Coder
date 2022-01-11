@@ -1,25 +1,17 @@
 //---------------------------------CPU--------------------------------------------//
+const r5_2600 = {
+    modelo: "Ryzen 5 2600",
+    precio: 22000
+}
 
-class procesador{
-    constructor(modeloProce,precioTotal){
-        this.modelo = modeloProce;
-        this.precio = precioTotal;
-    }
+const r5_3600 = {
+    modelo: "Ryzen 5 3600",
+    precio: 22000
+}
 
-    calcularPrecio(){
-        switch (this.modelo){
-            case 'Ryzen 5 2600':
-                this.precio = 22000;
-                break;
-            case 'Ryzen 5 3600':
-                this.precio = 36000;
-                break;
-            case 'Ryzen 5 5600':
-                this.precio = 43000;
-                break;
-            default: alert("algo hicimos mal");
-        }
-    }
+const r5_5600 = {
+    modelo: "Ryzen 5 5600",
+    precio: 22000
 }
 
 function pedirModProce(){
