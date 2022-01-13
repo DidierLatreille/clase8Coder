@@ -1,4 +1,3 @@
-//---------------------------------CPU--------------------------------------------//
 const carritoCompras = [];
 let totalCarrito = 0;
 let procesadorElegido;
