@@ -41,29 +41,29 @@ let listaRAM = [corsair16_3000, hyperX16_3200, trident16_3600];
 
 function pedirModProce(cpuSeleccionado){
     procesadorElegido = listaCPU.find(cpu => cpu.modelo == cpuSeleccionado);
-    actualizarCPUCarrito();
+    actualizarCPUCarrito(procesadorElegido);
 }
 
 function pedirModGPU(gpuSeleccionado){
     gpuElegido = listaGPU.find(gpu => gpu.modelo == gpuSeleccionado);
-    actualizarGPUCarrito();
+    actualizarGPUCarrito(gpuElegido);
 }
 
 function pedirModRAM(ramSeleccionado){
     ramElegido = listaRAM.find(ram => ram.modelo == ramSeleccionado);
-    actualizarRAMCarrito();
+    actualizarRAMCarrito(ramElegido);
 }
 
-function actualizarCPUCarrito(){
-    carritoCompras[0]= procesadorElegido;
+function actualizarCPUCarrito(cpu){
+    carritoCompras[0] = cpu
 }
 
-function actualizarGPUCarrito(){
-    carritoCompras[1]= gpuElegido;
+function actualizarGPUCarrito(gpu){
+    carritoCompras[1]= gpu;
 }
 
-function actualizarRAMCarrito(){
-    carritoCompras[2]= ramElegido;
+function actualizarRAMCarrito(ram){
+    carritoCompras[2]= ram;
 }
 
 function actualizarCarrito(){
